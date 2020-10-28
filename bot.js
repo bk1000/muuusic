@@ -106,7 +106,7 @@ ${videos.map(video2 => `[**${++index} **] \`${video2.title}\``).join('\n')}`)
                     var video = await youtube.getVideoByID(videos[videoIndex - 1].id);
                 } catch (err) {
                     console.error(err);
-                    return msg.channel.send(':X: لا يتوفر نتآئج بحث ');
+                    return msg.channel.send(':x: لا يتوفر نتآئج بحث ');
                 }
             }
  
